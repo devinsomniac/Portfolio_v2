@@ -12,7 +12,7 @@ interface Project {
 const Card = ({ project } : {project : Project}) => {
   return (
     <a href={project.link} target="_blank" rel="noopener noreferrer">
-    <div className="w-[300px] h-[350px]  p-7 bg-slate-50 rounded-xl border text-black flex flex-col justify-center items-center hover:scale-105">
+    <div className="w-[300px] h-[350px]  p-7 bg-slate-50 rounded-xl border text-black flex flex-col justify-center items-center">
       <h2 className='font-semibold text-2xl'>{project.name}</h2>
       <div className="p-1">
         <Image
@@ -28,10 +28,11 @@ const Card = ({ project } : {project : Project}) => {
           <Image
             src={item}
             alt="Tech"
-            height={40}
-            width={40}
-            className="inline-block h-12 w-12 rounded-full ring-2 ring-white"
+            height={30}
+            width={30}
+            className="inline-block h-8 w-8 rounded-full ring-2 ring-white"
             key={index}
+            unoptimized
           />
         ))}
       </div>
