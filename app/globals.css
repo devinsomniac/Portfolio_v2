@@ -3,14 +3,6 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'HaloDek';
-  src: url('./fonts/HaloDek.otf') format('opentype'),
-       url('./fonts/HaloDek.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'Harts';
   src: url('./fonts/Hartsfolk.otf') format('opentype');
   font-weight: normal;
@@ -21,9 +13,6 @@
 @layer utilities{
   .bg-custom{
     background-color: black;
-  }
-  .font-halo {
-    font-family: 'HaloDek', sans-serif;
   }
   .font-hart {
     font-family: 'Harts', sans-serif;
