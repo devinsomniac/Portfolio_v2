@@ -44,8 +44,7 @@ export default function Home() {
           </a>
         </div>
       </section>
-      <section className="p-8 md:mx-28 flex justify-center items-center flex-col">
-        <p className="font-hart text-white text-2xl mb-4">Tech Stack</p>
+      <section className="p-8 md:mx-28 flex justify-center items-center">
         <TechStack />
       </section>
       <section className="p-8 md:mx-28 flex justify-center items-center flex-col border-white-[2px]">
