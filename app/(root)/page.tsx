@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import light from './../../assets/light.png'
 import github from './../../assets/gitub.png'
