@@ -8,7 +8,7 @@ const Tech = () => {
         {TechStacks.map((tech, index) => (
         <div
           key={index}
-          className="flex flex-col justify-center items-center gap-2 bg-orange-200 p-2 rounded-2xl"
+          className="flex flex-col justify-center items-center gap-2 text-white  p-2"
         >
           <img src={tech.imageLink} alt="tech" height={45} width={45} />
           <p className="text-sm font-medium">{tech.name}</p>

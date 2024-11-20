@@ -3,8 +3,16 @@
 @tailwind utilities;
 
 
+@font-face {
+  font-family: 'Harts';
+  src: url('./fonts/Hartsfolk.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @layer utilities{
   .bg-custom{
-    background-color: rgb(20, 17, 17);
+    background-color: #101619;
   }
 }
+
