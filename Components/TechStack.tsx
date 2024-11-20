@@ -9,7 +9,7 @@ const TechStack = () => {
             <div className='md:px-10 text-white grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 justify-center'>
                 {TechStacks.map((tech,index) => (
                     <div className=' w-[100px] p-1 flex flex-col justify-center items-center' key={index}>
-                        <Image src={tech.imageLink} alt='reactJs' height={50} width={50} unoptimized/>
+                        <Image src={tech.imageLink} alt='reactJs' height={50} width={50} />
                         <p className='text-sm font-light gap-2' >{tech.name}</p>
                     </div>
                 ))}
