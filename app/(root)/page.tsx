@@ -1,13 +1,11 @@
 "use client"
 import Image from "next/image";
 import light from './../../assets/light.png'
-import github from './../../assets/gitub.png'
+import avatar from './../../assets/avatar.png'
 import { Button } from "@/Components/ui/button";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
-import TechStack from "@/Components/TechStack";
-import Projects from "@/Components/Projects";
 
 
 
@@ -40,18 +38,11 @@ export default function Home() {
         </div>
         <div className="flex flex-col justify-center items-center p-5 col-span-1">
           <a href="https://github.com/devinsomniac?tab=repositories" target="_blank" rel="noopener noreferrer" className="mb-2">
-          <Image src={github} alt="github-link" height={200} width={200} />
+          <Image src={avatar} alt="github-link" height={200} width={200} className="border-[5px] border-white rounded-full shadow-2xl" />
           </a>
         </div>
       </div>
-      <div className="p-8 flex justify-center items-center flex-col">
-      <h1 className="font-hart text-white text-2xl mb-4">Tech Stack</h1>
-        <TechStack />
-      </div>
-      <div className="p-8 md:mx-28 flex justify-center items-center flex-col border-white-[2px]">
-        <h1 className="font-hart text-2xl text-white mb-4">Projects</h1>
-        <Projects />
-      </div>
+      
 
     </>
   );
