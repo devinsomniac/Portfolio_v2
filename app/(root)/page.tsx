@@ -6,6 +6,7 @@ import { Button } from "@/Components/ui/button";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
+import Tech from "@/Components/Tech";
 
 
 
@@ -40,6 +41,18 @@ export default function Home() {
           <a href="https://github.com/devinsomniac?tab=repositories" target="_blank" rel="noopener noreferrer" className="mb-2">
           <Image src={avatar} alt="github-link" height={200} width={200} className="border-[5px] border-white rounded-full shadow-2xl" />
           </a>
+        </div>
+      </div>
+
+      {/* Tech and Projects */}
+      <div className="flex justify-center items-center mx-20">
+        {/* Tech Stack */}
+        <div className="w-full flex flex-col items-center justify-center">
+          <h2 className="font-hart text-2xl text-white mb-2">Tech Stack</h2>
+          <Tech/>
+        </div>
+        <div>
+          {/* Projects */}
         </div>
       </div>
       
