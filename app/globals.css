@@ -2,22 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Harts';
-  src: url('./fonts/Hartsfolk.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 
 @layer utilities{
   .bg-custom{
-    background-color: black;
+    background-color: rgb(20, 17, 17);
   }
-  .font-hart {
-    font-family: 'Harts', sans-serif;
-  }
-  
 }
-
-/*  */
