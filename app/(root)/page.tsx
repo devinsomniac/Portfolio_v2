@@ -17,7 +17,7 @@ export default function Home() {
       <div>
         <Image src={light} alt="light" height={200} width={150} className='fixed top-0 left-10 ' />
       </div>
-      <section className="p-16 md:p-20 mt-16 grid grid-cols-1 md:grid-cols-3 text-white">
+      <div className="p-16 md:p-20 mt-16 grid grid-cols-1 md:grid-cols-3 text-white">
         <div className="flex justify-start items-start flex-col p-5 md:ml-20 col-span-2">
           <h1 className="font-hart text-2xl md:text-5xl">Inzamam Ul Haque Chowdhury</h1>
           <p className="mt-2 mb-2">Research Intern at <br /> <span className="font-bold">National Institute of Technology, Kurukshetra,Haryana, India 🇮🇳 - 2024 </span></p>
@@ -43,14 +43,15 @@ export default function Home() {
           <Image src={github} alt="github-link" height={200} width={200} />
           </a>
         </div>
-      </section>
-      <section className="p-8 md:mx-28 flex justify-center items-center">
+      </div>
+      <div className="p-8 flex justify-center items-center flex-col">
+      <h1 className="font-hart text-white text-2xl mb-4">Tech Stack</h1>
         <TechStack />
-      </section>
-      <section className="p-8 md:mx-28 flex justify-center items-center flex-col border-white-[2px]">
+      </div>
+      <div className="p-8 md:mx-28 flex justify-center items-center flex-col border-white-[2px]">
         <h1 className="font-hart text-2xl text-white mb-4">Projects</h1>
         <Projects />
-      </section>
+      </div>
 
     </>
   );

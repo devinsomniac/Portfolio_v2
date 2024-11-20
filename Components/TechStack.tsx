@@ -4,7 +4,6 @@ import TechStacks from '@/TechStack'
 const TechStack = () => {
     return (
         <>
-
             <div className=' text-white grid sm:grid-cols-2 md:grid-cols-10 md:px-10 gap-4'>
                 {TechStacks.map((tech,index) => (
                     <div className=' w-[100px] p-1 flex flex-col justify-center items-center' key={index}>
