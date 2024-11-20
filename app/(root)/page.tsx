@@ -39,7 +39,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col justify-center items-center p-5 col-span-1">
           <a href="https://github.com/devinsomniac?tab=repositories" target="_blank" rel="noopener noreferrer" className="mb-2">
-          <Image src={avatar} alt="github-link" height={200} width={200} className="border-[5px] border-white rounded-full shadow-2xl" />
+            <Image src={avatar} alt="github-link" height={200} width={200} className="border-[5px] border-white rounded-full shadow-2xl" />
           </a>
         </div>
       </div>
@@ -47,15 +47,16 @@ export default function Home() {
       {/* Tech and Projects */}
       <div className="flex justify-center items-center mx-20">
         {/* Tech Stack */}
-        <div className="w-full flex flex-col items-center justify-center">
+        <div className="w-full flex items-center justify-center flex-col">
           <h2 className="font-hart text-2xl text-white mb-2">Tech Stack</h2>
-          <Tech/>
+          <Tech />
         </div>
+
         <div>
           {/* Projects */}
         </div>
       </div>
-      
+
 
     </>
   );

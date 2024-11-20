@@ -1,18 +1,23 @@
-import React from 'react'
-import TechStacks from '@/TechStack'
-
+import React from "react";
+import TechStacks from "@/TechStack";
 
 const Tech = () => {
   return (
-    <div className='text-white grid grid-cols-4 gap-4'>
-        {TechStacks.map((tech,index) => (
-           <div key={index} className='flex flex-col justify-center items-center gap-4'>
-                <img src={tech.imageLink} alt="tech" height={45} width={45} />
-                <p>{tech.name}</p>
-           </div> 
-        ))}
+    <div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-black">
+        {TechStacks.map((tech, index) => (
+        <div
+          key={index}
+          className="flex flex-col justify-center items-center gap-2 bg-orange-200 p-2 rounded-2xl"
+        >
+          <img src={tech.imageLink} alt="tech" height={45} width={45} />
+          <p className="text-sm font-medium">{tech.name}</p>
+        </div>
+      ))}
+        </div>
+      
     </div>
-  )
-}
+  );
+};
 
-export default Tech
+export default Tech;
