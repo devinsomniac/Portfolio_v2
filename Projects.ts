@@ -45,14 +45,14 @@ const ProjectsDetails = [
         id:7,
         name : "QR Generator",
         tech : ["/Tech/html.png","/Tech/css.png","/Tech/bootstrap.png","/Tech/js.png","/Tech/npm.svg"],
-        link : "https://github.com/devinsomniac/qrgenerator-app",
+        link : "https://qrgenerator-app.vercel.app/",
         image : "/images/qr.png"
     },
     {
         id:8,
         name : "SubTrack",
         tech : ["/Tech/next.png","/Tech/js.png","/Tech/tailwind.png","/Tech/py.png"],
-        link : "https://github.com/devinsomniac/MovieMind",
+        link : "https://subtrackdash.vercel.app/",
         image : "/images/subTrack.png"
     },
    

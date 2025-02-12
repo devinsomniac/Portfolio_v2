@@ -10,6 +10,8 @@ import { IoCallOutline } from "react-icons/io5";
 import { SlSocialLinkedin } from "react-icons/sl";
 import ProjectsDetails from "@/Projects";
 import Card from "@/Components/Card";
+import TechStacks from "@/TechStack";
+import Image from "next/image";
 
 const page = () => {
   return (
@@ -57,6 +59,19 @@ const page = () => {
               working on a recommender system project that leverages AI and machine learning to offer personalized experiences.</p>
           </div>
         </div>
+      </div>
+      <div style={{ backgroundColor: "#2234ae", backgroundImage: "linear-gradient(315deg, #2234ae 0%, #191714 74%)"}} className="min-h-screen snap-start p-8">
+      <h2 className="text-3xl md:text-6xl text-center text-white mb-4">Tech Stack</h2>
+      <div className="flex justify-center items-center">
+      <div className="p-20 grid  grid-cols-2 md:grid-cols-4 gap-14">
+      {TechStacks.map((tech,index) => (
+        <div key={index} className="flex flex-col items-center justify-center">
+          <Image src={tech.imageLink} alt="tech" height={50} width={80} className="rounded-full"/>
+          <p className="text-white">{tech.name}</p>
+        </div>
+      ))}
+    </div>
+      </div>
       </div>
       <div id="projects" style={{ background: "#fde7f9", backgroundImage: "linear-gradient(315deg, #fde7f9 0%, #aacaef 74%)" }} className="min-h-screen snap-start p-8">
         <h2 className="text-3xl md:text-6xl text-center mb-4">Portfolio Hub</h2>

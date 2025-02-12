@@ -49,6 +49,17 @@ const TechStacks = [
         name:"Python",
         imageLink : '/Tech/py.png'
     },
+    {
+        id:11,
+        name:"ShadCn",
+        imageLink : '/Tech/shadcn.png'
+    },
+    {
+        id:12,
+        name:"Clerk",
+        imageLink : '/Tech/clerk.jpg'
+    },
+
 
 ]
 
