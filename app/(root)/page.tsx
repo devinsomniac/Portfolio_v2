@@ -16,7 +16,7 @@ import Image from "next/image";
 const page = () => {
   return (
     <main className="h-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory">
-      <div  className="h-screen snap-start flex flex-col">
+      <div className="h-screen snap-start flex flex-col">
         <Navbar />
         <div className="bg-yellow-50 h-full w-full flex flex-col justify-center items-center ">
           <div className=" flex justify-center items-center">
@@ -60,25 +60,25 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div style={{ backgroundColor: "#2234ae", backgroundImage: "linear-gradient(315deg, #2234ae 0%, #191714 74%)"}} className="min-h-screen snap-start p-8">
-      <h2 className="text-3xl md:text-6xl text-center text-white mb-4">Tech Stack</h2>
-      <div className="flex justify-center items-center">
-      <div className="p-20 grid  grid-cols-2 md:grid-cols-4 gap-14">
-      {TechStacks.map((tech,index) => (
-        <div key={index} className="flex flex-col items-center justify-center">
-          <Image src={tech.imageLink} alt="tech" height={50} width={80} className="rounded-full"/>
-          <p className="text-white">{tech.name}</p>
+      <div id="tech" style={{ backgroundColor: "#2234ae", backgroundImage: "linear-gradient(315deg, #2234ae 0%, #191714 74%)" }} className="min-h-screen snap-start p-8">
+        <h2 className="text-3xl md:text-6xl text-center text-white mb-4">Tech Stack</h2>
+        <div className="flex justify-center items-center">
+          <div className="p-20 grid  grid-cols-2 md:grid-cols-4 gap-14">
+            {TechStacks.map((tech, index) => (
+              <div key={index} className="flex flex-col items-center justify-center">
+                <Image src={tech.imageLink} alt="tech" height={50} width={80} className="rounded-full" />
+                <p className="text-white">{tech.name}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-      </div>
       </div>
       <div id="projects" style={{ background: "#fde7f9", backgroundImage: "linear-gradient(315deg, #fde7f9 0%, #aacaef 74%)" }} className="min-h-screen snap-start p-8">
         <h2 className="text-3xl md:text-6xl text-center mb-4">Portfolio Hub</h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-2">
-        {ProjectsDetails.map((project,index) =>(
-          <Card project={project} key={index}/>
-        ))}
+          {ProjectsDetails.map((project, index) => (
+            <Card project={project} key={index} />
+          ))}
         </div>
       </div>
       <div id="contact" style={{ background: "linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%)" }} className="h-screen snap-start p-8 flex flex-col justify-center items-center">
@@ -89,7 +89,7 @@ const page = () => {
           <div className="flex flex-col md:flex-row gap-2 justify-center items-center p-4 my-5">
             <a href="mailto:inzamamchowdhury20@gmail.com" className="flex justify-center items-center gap-2 p-2 border border-black rounded-full hover:-translate-y-1 hover:-translate-x-1 hover:transition-transform duration-300 ease-in-out">
               <MdOutlineEmail />
-             Send me an email
+              Send me an email
             </a>
             <a href="tel:+8801784542917" className="flex justify-center items-center gap-2 p-2 border border-black rounded-full hover:-translate-y-1 hover:-translate-x-1 hover:transition-transform duration-300 ease-in-out">
               <IoCallOutline />
