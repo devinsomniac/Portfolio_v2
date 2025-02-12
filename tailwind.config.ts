@@ -9,7 +9,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        hart: ["Harts", "sans-serif"], 
+        helight: ["Helight", "sans-serif"],
+        thehand: ["TheHand", "serif"],
+        typewritter: ["TypeWritter", "monospace"],
+        hartsfolk : ["Hartsfolk"]
       },
     },
   },

@@ -1,63 +1,88 @@
-"use client"
-import Image from "next/image";
-import light from './../../assets/light.png'
-import avatar from './../../assets/avatar.png'
+import Navbar from "@/Components/Navbar"
+import { RiScrollToBottomLine } from "react-icons/ri";
+import React from "react"
 import { Button } from "@/Components/ui/button";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
-import Tech from "@/Components/Tech";
-import Projects from "@/Components/Projects";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+import { MdOutlineEmail } from "react-icons/md";
+import { IoCallOutline } from "react-icons/io5";
+import { SlSocialLinkedin } from "react-icons/sl";
 
 
-
-export default function Home() {
+const page = () => {
   return (
-    <>
-      <div>
-        <Image src={light} alt="light" height={200} width={150} className='fixed top-0 left-10 ' />
-      </div>
-      <div className="p-16 md:p-20 mt-16 grid grid-cols-1 md:grid-cols-3 text-white">
-        <div className="flex justify-start items-start flex-col p-5 md:ml-20 col-span-2">
-          <h1 className="font-hart text-2xl md:text-5xl">Inzamam Ul Haque <span className="text-red-800">Chowdhury</span></h1>
-          <p className="mt-2 mb-2">Research Intern at <br /> <span className="font-bold">National Institute of Technology, Kurukshetra,Haryana, India 🇮🇳 - 2024 </span></p>
-          <p>Upcoming Masters Scholar at <br /><span className="font-bold">Cardiff University,Wales UK 🇬🇧 - 2027 </span></p>
-          <div className="flex flex-col mt-2">
-            <Button className="rounded-full bg-slate-800 mt-2"><a
-              href="/Resume.pdf"
-              download="InzamamUlHaque_Resume.pdf"
-              className="text-white no-underline"
-            >
-              Download Resume
-            </a></Button>
-            <p className="font-semibold text-lg mt-2">Social Handles</p>
-            <div className="flex gap-2 text-2xl mt-1">
-              <a href="https://www.linkedin.com/in/inzamam-chowdhury/" target="_blank" rel="noopener noreferrer"><FaLinkedin className="text-[#0077B5] " /></a>
-              <a href="https://github.com/devinsomniac" target="_blank" rel="noopener noreferrer"><FaGithub className="text-[#063970]" /></a>
-              <a href="https://wa.me/916909442143" target="_blank" rel="noopener noreferrer"><IoLogoWhatsapp className="text-[#075E54]" /></a>
-            </div>
+    <main className="h-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory">
+      <div className="h-screen snap-start flex flex-col">
+        <Navbar />
+        <div className="bg-yellow-50 h-full w-full flex flex-col justify-center items-center ">
+          <div className=" flex justify-center items-center">
+            <h1 className=" text-6xl mx-[20%] text-center text-black font-typewritter">"First, solve the <span className="font-bold">problem</span>. Then, write the <span className="font-bold">code</span>." <br /> – <span className="font-helight">John Johnson</span></h1>
+          </div>
+          <div className="flex justify-center items-center m-8">
+            <RiScrollToBottomLine className="font-bold text-6xl animate-bounce " />
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center p-5 col-span-1">
-          <a href="https://github.com/devinsomniac?tab=repositories" target="_blank" rel="noopener noreferrer" className="mb-2">
-            <Image src={avatar} alt="github-link" height={200} width={200} className="border-[5px] border-white rounded-full shadow-2xl" />
-          </a>
+      </div>
+      <div style={{ backgroundColor: "#2b4162", backgroundImage: "linear-gradient(315deg, #2b4162 0%, #12100e 74%)" }} className=" h-[100vh] snap-start p-8 text-white">
+        <h2 className="text-6xl text-white">About me</h2>
+        <div className="my-2 flex justify-center items-center">
+          <p className="px-8 text-white font-bold text-3xl font-typewritter">I am passionate about building software that is innovative, efficient, and impactful,
+            turning ideas into seamless digital experiences. I am also excited about the new era of
+            AI and its potential to revolutionize how we interact with technology.</p>
+        </div>
+        <div className="p-8 py-12 grid grid-cols-1 md:grid-cols-2">
+          <div className="flex flex-col justify-center items-start py-10">
+            <h2 className="font-hartsfolk text-4xl">Inzamam Ul Haque <span className="text-red-500">Chowdhury</span></h2>
+            <p className="py-1">
+              Upcoming Masters Scholar at <br />
+              <span className="font-bold">Cardiff University,Wales UK 🇬🇧 - 2027</span>
+            </p>
+            <p className="py-1">Research Intern at <br />
+              <span className="font-bold">National Institute of Technology, Kurukshetra,Haryana, India 🇮🇳 - 2024</span></p>
+            <p className="py-1"> Graduated in B.tech in Computer Engineering <br />
+              <span className="font-bold">National Institute of Technology, Kurukshetra,Haryana, India 🇮🇳 - 2024</span></p>
+            <Button className="bg-slate-600">Download Resume</Button>
+            <div className="flex gap-2 mt-3 text-2xl">
+              <a href="https://wa.me/916909442143"><IoLogoWhatsapp className="text-green-600" /></a>
+              <a href="https://www.instagram.com/responsible_mess_/"><FaSquareInstagram className="text-pink-700" /></a>
+              <a href="https://www.linkedin.com/in/inzamam-chowdhury/"><FaLinkedin className="text-blue-800" /></a>
+            </div>
+          </div>
+          <div className="py-10 text-2xl">
+            <p>I am a Computer Engineering graduate from NIT Kurukshetra with expertise in full-stack development.
+              I have a strong foundation in building robust and scalable applications, and I am passionate about
+              creating innovative software solutions. Currently, I am focusing on AI agents and exploring their potential,
+              working on a recommender system project that leverages AI and machine learning to offer personalized experiences.</p>
+          </div>
         </div>
       </div>
-
-      {/* Tech and Projects */}
-      
-        <div className="w-full flex items-center justify-center flex-col mb-4">
-          <h2 className="font-hart text-2xl text-white mb-2">Tech Stack</h2>
-          <Tech />
+      <div style={{ background: "#fde7f9", backgroundImage: "linear-gradient(315deg, #fde7f9 0%, #aacaef 74%)" }} className="h-screen snap-start p-8">
+        <h2 className="text-6xl">My Work</h2>
+      </div>
+      <div style={{ background: "linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%)" }} className="h-screen snap-start p-8 flex flex-col justify-center items-center">
+        <h2 className="text-6xl">Contact Me</h2>
+        <div className="text-center flex-grow flex flex-col justify-center items-center">
+          <p className="font-bold text-gray-600">Let's Build Something Great Together! </p>
+          <h1 className="text-8xl font-thin">Let’s Start a Conversation!</h1>
+          <div className="flex gap-2 justify-center items-center p-4 my-5">
+            <a href="mailto:inzamamchowdhury20@gmail.com" className="flex justify-center items-center gap-2 p-2 border border-black rounded-full hover:-translate-y-1 hover:-translate-x-1 hover:transition-transform duration-300 ease-in-out">
+              <MdOutlineEmail />
+              Send me an email
+            </a>
+            <a href="tel:+8801784542917" className="flex justify-center items-center gap-2 p-2 border border-black rounded-full hover:-translate-y-1 hover:-translate-x-1 hover:transition-transform duration-300 ease-in-out">
+              <IoCallOutline />
+              Call me
+            </a>
+            <a href="https://www.linkedin.com/in/inzamam-chowdhury/" target="_blank" className="flex justify-center items-center gap-2 p-2 border border-black rounded-full hover:-translate-y-1 hover:-translate-x-1 hover:transition-transform duration-300 ease-in-out">
+              <SlSocialLinkedin />
+              Connect with me on LinkedIn</a>
+          </div>
         </div>
-        {/* Projects */}
-        <div className="w-full flex items-center justify-center flex-col mt-4">
-        <h2 className="font-hart text-2xl text-white mb-2">Work Samples</h2>
-        <Projects/>
-        </div>
-
-
-    </>
-  );
+        <h2 className="text-center text-3xl">You Can Call me <span className="font-bold">Insomniac </span>;)</h2>
+      </div>
+    </main>
+  )
 }
+
+export default page

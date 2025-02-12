@@ -2,17 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* globals.css */
 @font-face {
-  font-family: 'Harts';
-  src: url('./fonts/Hartsfolk.otf') format('opentype');
-  font-weight: normal;
+  font-family: "Helight";
+  src: url("/fonts/HeligthonSignature.otf") format("opentype");
+  font-weight: 400;
   font-style: normal;
 }
 
-@layer utilities{
-  .bg-custom{
-    background-color: #101619;
-  }
+@font-face {
+  font-family: "TheHand";
+  src: url("/fonts/TheHand.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 
+
+@font-face {
+  font-family: "typeWritter";
+  src: url("/fonts/TypeWritter.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Hartsfolk";
+  src: url("/fonts/Hartsfolk.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
