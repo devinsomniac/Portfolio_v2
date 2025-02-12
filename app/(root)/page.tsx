@@ -17,7 +17,7 @@ const page = () => {
         <Navbar />
         <div className="bg-yellow-50 h-full w-full flex flex-col justify-center items-center ">
           <div className=" flex justify-center items-center">
-            <h1 className=" text-6xl mx-[20%] text-center text-black font-typewritter">"First, solve the <span className="font-bold">problem</span>. Then, write the <span className="font-bold">code</span>." <br /> – <span className="font-helight">John Johnson</span></h1>
+            <h1 className=" text-6xl mx-[20%] text-center text-black font-typewritter">&ldquo;First, solve the <span className="font-bold">problem</span>. Then, write the <span className="font-bold">code</span>.&rdquo;<br /> – <span className="font-helight">John Johnson</span></h1>
           </div>
           <div className="flex justify-center items-center m-8">
             <RiScrollToBottomLine className="font-bold text-6xl animate-bounce " />
@@ -63,7 +63,7 @@ const page = () => {
       <div id="contact" style={{ background: "linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%)" }} className="h-screen snap-start p-8 flex flex-col justify-center items-center">
         <h2 className="text-6xl">Contact Me</h2>
         <div className="text-center flex-grow flex flex-col justify-center items-center">
-          <p className="font-bold text-gray-600">Let's Build Something Great Together! </p>
+          <p className="font-bold text-gray-600">Let&apos;s Build Something Great Together! </p>
           <h1 className="text-8xl font-thin">Let’s Start a Conversation!</h1>
           <div className="flex gap-2 justify-center items-center p-4 my-5">
             <a href="mailto:inzamamchowdhury20@gmail.com" className="flex justify-center items-center gap-2 p-2 border border-black rounded-full hover:-translate-y-1 hover:-translate-x-1 hover:transition-transform duration-300 ease-in-out">
