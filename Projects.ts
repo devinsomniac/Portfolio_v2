@@ -17,15 +17,15 @@ const ProjectsDetails = [
         id:3,
         name : "Irfan Express",
         tech : ["/Tech/react.gif","/Tech/js.png","/Tech/clerk.jpg","/Tech/postgres.png","/Tech/drizzle.jpg","/Tech/tailwind.png"],
-        link : "https://x-combinator-startup.vercel.app/",
+        link : "https://irfanexpress.vercel.app/",
         image : "/images/irfan.png"
     },
     {
         id:4,
-        name : "Irfan Express",
-        tech : ["/Tech/react.gif","/Tech/js.png","/Tech/clerk.jpg","/Tech/postgres.png","/Tech/drizzle.jpg","/Tech/tailwind.png"],
-        link : "https://x-combinator-startup.vercel.app/",
-        image : "/images/irfan.png"
+        name : "Irfex Dashboard",
+        tech : ["/Tech/next.png","/Tech/js.png","/Tech/clerk.jpg","/Tech/postgres.png","/Tech/drizzle.jpg","/Tech/tailwind.png"],
+        link : "https://github.com/devinsomniac/IrfEx-Dashboard",
+        image : "/images/irfex.png"
     },
     {
         id:5,
@@ -50,10 +50,10 @@ const ProjectsDetails = [
     },
     {
         id:8,
-        name : "MovieMind",
-        tech : ["/Tech/html.png","/Tech/js.png","/Tech/tailwind.png","/Tech/py.png"],
+        name : "SubTrack",
+        tech : ["/Tech/next.png","/Tech/js.png","/Tech/tailwind.png","/Tech/py.png"],
         link : "https://github.com/devinsomniac/MovieMind",
-        image : "/images/movie.png"
+        image : "/images/subTrack.png"
     },
    
 ]

@@ -7,7 +7,7 @@ import {
     SheetTitle,
     SheetTrigger,
 } from "@/Components/ui/sheet"
-import { Separator } from "@/Components/ui/separator"
+
 
 
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -16,7 +16,7 @@ const Navbar = () => {
     return (
         <div>
             <nav className='px-2 flex justify-between items-center'>
-                <Image src={'/portfolio_logo.png'} alt='logo' height={20} width={60} />
+                <Image src={'/portfolio_logo.png'} alt='logo' height={20} width={60} className='m-3' />
                 <Sheet>
                     <SheetTrigger className='flex gap-2 justify-center items-center text-2xl'><GiHamburgerMenu/></SheetTrigger>
                     <SheetContent className='bg-white'>
@@ -26,7 +26,7 @@ const Navbar = () => {
                             <ul className='text-3xl'>
                                 <li className='border-b'><a href="#about">About Me</a></li>
                                 <li className='border-b'><a href="#projects">Projects</a></li>
-                                <li className='border-b'><a href="">Github</a></li>
+                                <li className='border-b'><a href="https://github.com/devinsomniac">Github</a></li>
                                 <li className='border-b'><a href="#contact">Contact Me</a></li>
                             </ul>
                             </div>
