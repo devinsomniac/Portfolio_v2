@@ -24,10 +24,10 @@ const Navbar = () => {
                             <SheetTitle>Menu</SheetTitle>
                             <div>
                             <ul className='text-3xl'>
-                                <li className='border-b'>About Me</li>
-                                <li className='border-b'>Projects</li>
-                                <li className='border-b'>Github</li>
-                                <li className='border-b'>Contact Me</li>
+                                <li className='border-b'><a href="#about">About Me</a></li>
+                                <li className='border-b'><a href="#projects">Projects</a></li>
+                                <li className='border-b'><a href="">Github</a></li>
+                                <li className='border-b'><a href="#contact">Contact Me</a></li>
                             </ul>
                             </div>
                         </SheetHeader>

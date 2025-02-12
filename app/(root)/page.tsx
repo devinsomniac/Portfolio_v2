@@ -13,7 +13,7 @@ import { SlSocialLinkedin } from "react-icons/sl";
 const page = () => {
   return (
     <main className="h-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory">
-      <div className="h-screen snap-start flex flex-col">
+      <div  className="h-screen snap-start flex flex-col">
         <Navbar />
         <div className="bg-yellow-50 h-full w-full flex flex-col justify-center items-center ">
           <div className=" flex justify-center items-center">
@@ -24,7 +24,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div style={{ backgroundColor: "#2b4162", backgroundImage: "linear-gradient(315deg, #2b4162 0%, #12100e 74%)" }} className=" h-[100vh] snap-start p-8 text-white">
+      <div id="about" style={{ backgroundColor: "#2b4162", backgroundImage: "linear-gradient(315deg, #2b4162 0%, #12100e 74%)" }} className=" h-[100vh] snap-start p-8 text-white">
         <h2 className="text-6xl text-white">About me</h2>
         <div className="my-2 flex justify-center items-center">
           <p className="px-8 text-white font-bold text-3xl font-typewritter">I am passionate about building software that is innovative, efficient, and impactful,
@@ -57,10 +57,10 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div style={{ background: "#fde7f9", backgroundImage: "linear-gradient(315deg, #fde7f9 0%, #aacaef 74%)" }} className="h-screen snap-start p-8">
+      <div id="projects" style={{ background: "#fde7f9", backgroundImage: "linear-gradient(315deg, #fde7f9 0%, #aacaef 74%)" }} className="h-screen snap-start p-8">
         <h2 className="text-6xl">My Work</h2>
       </div>
-      <div style={{ background: "linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%)" }} className="h-screen snap-start p-8 flex flex-col justify-center items-center">
+      <div id="contact" style={{ background: "linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%)" }} className="h-screen snap-start p-8 flex flex-col justify-center items-center">
         <h2 className="text-6xl">Contact Me</h2>
         <div className="text-center flex-grow flex flex-col justify-center items-center">
           <p className="font-bold text-gray-600">Let's Build Something Great Together! </p>
