@@ -44,7 +44,7 @@ const ProjectsDetails = [
     {
         id:7,
         name : "QR Generator",
-        tech : ["/Tech/html.png","/Tech/css.png","/Tech/bootstrap.png","/Tech/js.png","/Tech/npm.svg"],
+        tech : ["/Tech/next.png","/Tech/ts.png","/Tech/postgres.png","/Tech/drizzle.jpg","/Tech/tailwind.png"],
         link : "https://qrgenerator-app.vercel.app/",
         image : "/images/qr.png"
     },
